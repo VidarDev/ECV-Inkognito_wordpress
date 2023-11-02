@@ -1,0 +1,10 @@
+$component-name: breadcrumb;
+
+.#{$component-name} {
+  &__wrapper {}
+  &__name {}
+  &__image {}
+  &__icon {}
+  &__link {}
+  &__items {}
+}

@@ -176,3 +176,15 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+if (function_exists('acf_add_options_page')) {
+
+    acf_add_options_page(
+        array(
+            'page_title' => 'Options du site',
+            'menu_title' => 'Options du site',
+            'menu_slug' => 'website-settings',
+            'capability' => 'edit_posts',
+            'icon_url' => 'dashicons-admin-tools'
+        )
+    );
+}

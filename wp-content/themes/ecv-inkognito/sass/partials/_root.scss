@@ -22,7 +22,7 @@ $breakpoints-4xl: 1600px;
   --neutral-transparent: rgba(255, 255, 255, 0);
   --neutral-white: #FFF;
   --neutral-black: #111111;
-  --neutral: #111111;
+  --neutral: var(--neutral-white);
   --neutral-light: #474747;
   --neutral-dark: #181818;
 

@@ -31,13 +31,13 @@
 		<nav id="navigation" class="nav">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="iconoir-menu"></i><?php esc_html_e( 'Primary Menu', 'ecv-inkognito' ); ?></button>
 			<div class="nav-modal">
-                <?php $setting_background = get_field('setting_background'); ?>
+                <?php $setting_background = get_field('setting_background', 'option'); ?>
                 <?php if( $setting_background && !empty( $setting_background )): ?>
-                    <img src="<?= esc_url($setting_background['url']) ?>" role="presentation" aria-label="<?= esc_url($setting_background['alt']) ?>" alt="<?= esc_url($setting_background['alt']) ?>" loading="lazy" width="320" height="180" />
+                    <img class="nav-modal__background" src="<?= esc_url($setting_background['url']) ?>" role="presentation" aria-label="<?= esc_url($setting_background['alt']) ?>" alt="<?= esc_url($setting_background['alt']) ?>" loading="lazy" width="320" height="180" />
                 <?php endif; ?>
                 <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="iconoir-menu"></i><?php esc_html_e( 'Primary Menu', 'ecv-inkognito' ); ?></button>
                 <div class="nav-modal__content">
-                    <?php $setting_logo = get_field('setting_logo'); ?>
+                    <?php $setting_logo = get_field('setting_logo', 'option'); ?>
                     <?php if( $setting_logo && !empty( $setting_logo )): ?>
                         <img src="<?= esc_url($setting_logo['url']) ?>" role="presentation" aria-label="<?= esc_url($setting_logo['alt']) ?>" alt="<?= esc_url($setting_logo['alt']) ?>" loading="lazy" width="320" height="180" />
                     <?php endif; ?>

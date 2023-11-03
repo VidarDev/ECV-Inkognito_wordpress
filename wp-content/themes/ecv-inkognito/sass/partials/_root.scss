@@ -12,120 +12,31 @@ $breakpoints-4xl: 1600px;
 
 :root {
   // Familles de Fonts
-  --font-family-primary: Montserrat, sans-serif;
-  --font-family-secondary: Montserrat, sans-serif;
+  --font-family-primary: 'Rubik', Arial, sans-serif;
 
   // Couleurs principales
-  --brand-uno-50: #000;
-  --brand-uno-100: #000;
-  --brand-uno-200: #000;
-  --brand-uno-300: #000;
-  --brand-uno-400: #000;
-  --brand-uno-500: #000;
-  --brand-uno-600: #000;
-  --brand-uno-700: #000;
-  --brand-uno-800: #000;
-  --brand-uno-900: #000;
-  --brand-uno-1000: #000;
-
-  --brand-uno: #000;
-  --brand-uno-light: #000;
-  --brand-uno-dark: #000;
-  --brand-uno-hover: #000;
-  --brand-uno-focus: #000;
+  --brand-uno: #edd69b;
   --brand-uno-border: var(--brand-uno);
-  --brand-uno-border-hover: var(--brand-uno-hover);
-  --brand-uno-border-focus: var(--brand-uno-border-hover);
-  --brand-uno-background: #000;
-  --brand-uno-background-hover: #000;
-  --brand-uno-background-focus: var(--brand-uno-background-hover);
-
-  --brand-duo-50: #000;
-  --brand-duo-100: #000;
-  --brand-duo-200: #000;
-  --brand-duo-300: #000;
-  --brand-duo-400: #000;
-  --brand-duo-500: #000;
-  --brand-duo-600: #000;
-  --brand-duo-700: #000;
-  --brand-duo-800: #000;
-  --brand-duo-900: #000;
-  --brand-duo-1000: #000;
-
-  --brand-duo: #000;
-  --brand-duo-light: #000;
-  --brand-duo-dark: #000;
-  --brand-duo-hover: #000;
-  --brand-duo-focus: #000;
-  --brand-duo-border: var(--brand-duo);
-  --brand-duo-border-hover: var(--brand-duo-hover);
-  --brand-duo-border-focus: var(--brand-duo-border-hover);
-  --brand-duo-background: #000;
-  --brand-duo-background-hover: #000;
-  --brand-duo-background-focus: var(--brand-duo-background-hover);
-
-  --brand-trio-50: #000;
-  --brand-trio-100: #000;
-  --brand-trio-200: #000;
-  --brand-trio-300: #000;
-  --brand-trio-400: #000;
-  --brand-trio-500: #000;
-  --brand-trio-600: #000;
-  --brand-trio-700: #000;
-  --brand-trio-800: #000;
-  --brand-trio-900: #000;
-  --brand-trio-1000: #000;
-
-  --brand-trio: #000;
-  --brand-trio-light: #000;
-  --brand-trio-dark: #000;
-  --brand-trio-hover: #000;
-  --brand-trio-focus: #000;
-  --brand-trio-border: var(--brand-trio);
-  --brand-trio-border-hover: var(--brand-trio-hover);
-  --brand-trio-border-focus: var(--brand-trio-border-hover);
-  --brand-trio-background: #000;
-  --brand-trio-background-hover: #000;
-  --brand-trio-background-focus: var(--brand-trio-background-hover);
 
   // Neutral colors: nuances de gris
-  --neutral-50: #000;
-  --neutral-100: #000;
-  --neutral-200: #000;
-  --neutral-300: #000;
-  --neutral-400: #000;
-  --neutral-500: #000;
-  --neutral-600: #000;
-  --neutral-700: #000;
-  --neutral-800: #000;
-  --neutral-900: #000;
-  --neutral-1000: #000;
-
   --neutral-transparent: rgba(255, 255, 255, 0);
-  --neutral-white: #000;
-  --neutral-black: #000;
-  --neutral: #000;
-  --neutral-light: #000;
-  --neutral-dark: #000;
-  --neutral-hover: #000;
-  --neutral-focus: #000;
-  --neutral-disabled: #000;
-  --neutral-background: #000;
-  --neutral-background-hover: #000;
-  --neutral-background-focus: var(--neutral-background-hover);
-  --neutral-background-disabled: #000;
+  --neutral-white: #FFF;
+  --neutral-black: #111111;
+  --neutral: #111111;
+  --neutral-light: #474747;
+  --neutral-dark: #181818;
 
   // Couleurs sémantiques
-  --signal-success: #000; // Vert
-  --signal-success-background: #000;
+  --signal-success: #5CBF54; // Vert
+  --signal-success-background: #CDEBCB;
   --signal-success-border: var(--signal-success);
 
-  --signal-warning: #000; // Orange
-  --signal-warning-background: #000;
+  --signal-warning: #E39735; // Orange
+  --signal-warning-background: #F1D5B1;
   --signal-warning-border: var(--signal-warning);
 
-  --signal-error: #000; // Rouge
-  --signal-error-background: #000;
+  --signal-error: #C71414; // Rouge
+  --signal-error-background: #FDEDED;
   --signal-error-border: var(--signal-error);
 
   // Spacing
@@ -156,18 +67,5 @@ $breakpoints-4xl: 1600px;
 
   // Transition
   --transition-base: 0.2s ease-out;
-
-  // Si plus de 3 couleurs principales
-  --univers-uno: #000;
-  --univers-uno-light: #000;
-  --univers-uno-dark: #000;
-  --univers-uno-hover: #000;
-  --univers-uno-focus: #000;
-  --univers-uno-border: var(--univers-uno);
-  --univers-uno-border-hover: var(--univers-uno-hover);
-  --univers-uno-border-focus: var(--univers-uno-border-hover);
-  --univers-uno-background: #000;
-  --univers-uno-background-hover: #000;
-  --univers-uno-background-focus: var(--univers-uno-background-hover);
 }
 /* stylelint-enable */

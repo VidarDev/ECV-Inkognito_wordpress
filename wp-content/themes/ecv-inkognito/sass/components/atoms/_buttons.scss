@@ -1,10 +1,22 @@
 $component-name: btn;
 
 .#{$component-name} {
-  &__wrapper {}
-  &__name {}
-  &__image {}
-  &__icon {}
-  &__link {}
-  &__items {}
+  font-size: 1.25rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  padding: 0.75rem 2rem;
+}
+
+.#{$component-name}--uno {
+  color: var(--neutral) !important;
+  border: 1px solid var(--brand-uno);
+
+  &:visited {
+    color: var(--neutral) !important;
+  }
+
+  &:hover, &:focus {
+    color: var(--brand-uno) !important;
+  }
 }

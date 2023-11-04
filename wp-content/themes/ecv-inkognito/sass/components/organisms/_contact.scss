@@ -44,8 +44,10 @@ $component-name: contact;
       font-size: 3rem;
       line-height: 1.1;
       white-space: nowrap;
-      transform: rotate(-0.25turn) translateY(0px);
+      transform: rotate(-0.25turn) translateY(2px);
       text-transform: uppercase;
+      font-weight: 500;
+      -webkit-line-clamp: 1;
     }
   }
 
@@ -68,8 +70,8 @@ $component-name: contact;
     margin-bottom: 2rem;
 
     > i {
-      font-size: 1rem;
-      color: var(--neutral);
+      font-size: 1.125rem;
+      color: var(--brand-uno);
       margin-right: 0.5rem;
     }
 

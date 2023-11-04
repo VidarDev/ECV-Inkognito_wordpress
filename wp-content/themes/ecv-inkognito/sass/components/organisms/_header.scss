@@ -3,34 +3,44 @@
 
   .nav {
     width: 100%;
+    position: absolute;
 
     .menu-toggle {
-      position: absolute;
+      z-index: 20;
+      position: fixed;
+      display: flex;
       top: 2rem;
       right: 2rem;
       width: 2rem;
       height: 2rem;
+      padding: 0;
       aspect-ratio: 1/1;
-      background-color: var(--brand-uno);
+      background-color: transparent;
+      border: none;
+      justify-content: center;
+      align-items: center;
 
       i {
         color: var(--brand-uno);
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
     }
 
     .nav-modal {
       z-index: 10;
       position: fixed;
-      display: flex;
+      display: none;
       width: 100%;
       height: 100dvh;
       background-color: transparent;
       padding: 2rem;
-      //display: flex;
       justify-content: center;
       align-items: center;
       column-gap: 6rem;
+
+      &.active {
+        display: flex;
+      }
 
       &__background {
         z-index: -1;
@@ -70,10 +80,12 @@
 
           li {
             font-size: 3rem;
+            font-weight: 500;
             line-height: 1.1;
 
             a {
               color: var(--neutral);
+              text-transform: uppercase;
 
               &:hover {
                 color: var(--brand-uno);

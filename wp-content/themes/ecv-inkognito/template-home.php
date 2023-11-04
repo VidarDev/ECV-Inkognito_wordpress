@@ -38,10 +38,10 @@ Template Name: Accueil
             </h1>
             <span class="hero__slogan"><?php if( get_field('slogan')): echo get_field('slogan'); endif; ?>
             </span>
-            <a class="btn btn--uno" href="<?php if( get_field('hero_url')): echo get_field('hero_url'); endif; ?>"></a>
+            <a class="btn btn--uno" href="<?php if( get_field('hero_url')): echo get_field('hero_url'); endif; ?>">Voir plus</a>
         </div>
         <a href="<?php if(get_field('hero_arrow_link')): echo get_field('hero_arrow_link'); endif; ?>" class="hero__icon">
-            <i class="iconoir-arrow-down"></i>
+            <i class="iconoir-nav-arrow-down"></i>
         </a>
     </div>
     <?php if( have_rows('home_informations') ): ?>

@@ -5,6 +5,8 @@ Template Name: History
 ?>
 <?php get_header(); ?>
 
+<h1 class="screen-reader-only"><?= get_the_title(); ?></h1>
+
 <div id="about" class="about">
     <?php $about_image = get_field('about_image'); ?>
     <?php if( $about_image && !empty( $about_image )): ?>

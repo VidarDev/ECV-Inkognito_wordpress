@@ -5,6 +5,8 @@ Template Name: Design
 ?>
 <?php get_header(); ?>
 
+<h1 class="screen-reader-only"><?= get_the_title(); ?></h1>
+
 <div id="gallery" class="gallery">
     <div class="container">
         <span class="gallery__subtitle subtitle"><?php if( get_field('gallery_subtitle', 'option')): echo get_field('gallery_subtitle', 'option'); endif; ?></span>

@@ -27,7 +27,7 @@
                 </div>
                 <div class="contact__content">
                     <span class="contact__adresse-subtitle"><?php if( get_field('contact_adresse_subtitle', 'option')): echo get_field('contact_adresse_subtitle', 'option'); endif; ?></span>
-                    <h2 class="contact__adresse-title"><?php if( get_field('contact_adresse_title', 'option')): echo get_field('contact_adresse_title', 'option'); endif; ?></h2>
+                    <h3 class="contact__adresse-title"><?php if( get_field('contact_adresse_title', 'option')): echo get_field('contact_adresse_title', 'option'); endif; ?></h3>
                     <div class="contact__adresse">
                         <i class="iconoir-position"></i>
                         <p><?php if( get_field('contact_adresse', 'option')): echo get_field('contact_adresse', 'option'); endif; ?></p>

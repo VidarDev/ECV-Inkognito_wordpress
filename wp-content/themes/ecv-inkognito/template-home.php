@@ -33,7 +33,7 @@ Template Name: Accueil
                 <?php if( get_field('titre')):
                     echo get_field('titre');
                 else:
-                    echo "#";
+                    echo get_the_title();
                 endif; ?>
             </h1>
             <span class="hero__slogan"><?php if( get_field('slogan')): echo get_field('slogan'); endif; ?>

@@ -7,8 +7,23 @@ $component-name: about;
 
   &__image {
     flex: 1 1 calc(50% - 3rem);
-    object-fit: cover;
     height: auto;
+    width: 100%;
+    position: relative;
+
+    > img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+
+      &:hover {
+        filter: brightness(0.75) grayscale(0.8);
+      }
+    }
   }
 
   &__vertical-text {
@@ -29,12 +44,13 @@ $component-name: about;
       text-transform: uppercase;
       font-weight: 500;
       -webkit-line-clamp: 1;
+      padding: 0.5rem;
     }
   }
 
   &__content {
     flex: 1 1 calc(50% - 3rem);
-    padding: 4rem 6rem;
+    padding: 4rem 6rem 2rem 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,12 +60,22 @@ $component-name: about;
       font-size: 1rem;
       line-height: 1.33;
       color: var(--neutral);
-      margin-bottom: 0;
       text-align: justify;
+      margin-bottom: 0.5rem;
 
       strong {
         color: var(--brand-uno);
       }
+    }
+  }
+
+  &__more {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    > .btn {
+      margin-top: 2rem;
     }
   }
 
@@ -101,7 +127,8 @@ $component-name: about;
 
     &__image {
       flex: 1 1 100%;
-      width: 100%
+      width: 100%;
+      display: none;
     }
 
     &__vertical-text {
@@ -110,6 +137,15 @@ $component-name: about;
 
       span {
         position: relative;
+      }
+    }
+
+    &__more {
+      display: flex;
+      justify-content: center;
+
+      > .btn {
+        margin-top: 2rem;
       }
     }
 

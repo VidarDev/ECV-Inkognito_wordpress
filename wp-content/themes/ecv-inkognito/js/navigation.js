@@ -4,21 +4,21 @@
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
  */
-( function() {
-	const menuButton = document.getElementById( 'menu-toggle' );
-	const navModal = document.getElementById( 'nav-modal' );
+(function () {
+    const menuButton = document.getElementById('menu-toggle');
+    const navModal = document.getElementById('nav-modal');
 
-	menuButton.addEventListener("click", function() {
-		navModal.classList.toggle("active");
+    menuButton.addEventListener("click", function () {
+        navModal.classList.toggle("active");
 
-		if ( menuButton.classList.contains('active') ) {
-			menuButton.innerHTML = '<i class="iconoir-menu"></i><span class="screen-reader-only">Menu</span>';
-		} else {
-			menuButton.innerHTML = '<i class="iconoir-xmark"></i><span class="screen-reader-only">Menu</span>';
-		}
-		menuButton.classList.toggle("active");
-	});
-}() );
+        if (menuButton.classList.contains('active')) {
+            menuButton.innerHTML = '<i class="iconoir-menu"></i><span class="screen-reader-only">Menu</span>';
+        } else {
+            menuButton.innerHTML = '<i class="iconoir-xmark"></i><span class="screen-reader-only">Menu</span>';
+        }
+        menuButton.classList.toggle("active");
+    });
+}());
 // ( function() {
 // 	const siteNavigation = document.getElementById( 'site-navigation' );
 //

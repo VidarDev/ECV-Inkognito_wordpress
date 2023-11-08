@@ -4,6 +4,7 @@ $component-name: gallery;
   position: relative;
   width: 100%;
   margin-bottom: 5rem;
+  margin-top: 5rem;
 
   &__subtitle {
 
@@ -27,9 +28,8 @@ $component-name: gallery;
     aspect-ratio: 1/1;
 
     &:hover {
-
       .#{$component-name}__image {
-        transform: scale(1.05);
+        filter: brightness(0.75) grayscale(0.8);
       }
     }
   }
@@ -39,9 +39,34 @@ $component-name: gallery;
   }
 
   &__image {
-    width: auto;
-    height: 100%;;
-    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    > img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+
+      &:hover {
+        filter: brightness(0.75) grayscale(0.8);
+      }
+    }
+  }
+
+  &__more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn {
+      margin-top: 2rem;
+      margin-inline: auto;
+    }
   }
 }
 

@@ -15,15 +15,15 @@ $breakpoints-4xl: 1600px;
   --font-family-primary: 'Rubik', Arial, sans-serif;
 
   // Couleurs principales
-  --brand-uno: #edd69b;
+  --brand-uno: #3191ff;
   --brand-uno-border: var(--brand-uno);
 
   // Neutral colors: nuances de gris
   --neutral-transparent: rgba(255, 255, 255, 0);
-  --neutral-white: #FFF;
-  --neutral-black: #111111;
-  --neutral: var(--neutral-white);
-  --neutral-light: #474747;
+  --neutral-white: #EBEEF3;
+  --neutral-black: #041e40;
+  --neutral: var(--neutral-black);
+  --neutral-light: #d6dde7;
   --neutral-dark: #181818;
 
   // Couleurs sémantiques
@@ -68,4 +68,5 @@ $breakpoints-4xl: 1600px;
   // Transition
   --transition-base: 0.2s ease-out;
 }
+
 /* stylelint-enable */

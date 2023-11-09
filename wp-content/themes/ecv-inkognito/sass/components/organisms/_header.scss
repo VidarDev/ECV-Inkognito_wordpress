@@ -121,7 +121,7 @@ $component-name: header;
   }
 }
 
-@media (width <= $breakpoints-2xl) {
+@media (width < $breakpoints-2xl) {
 
   .#{$component-name} {
 
@@ -132,7 +132,7 @@ $component-name: header;
   }
 }
 
-@media (width <= $breakpoints-md) {
+@media (width < $breakpoints-md) {
 
   .#{$component-name} {
 
@@ -169,10 +169,15 @@ $component-name: header;
     &__slogan {
       font-size: 2.25rem;
     }
+
+    &__title {
+      font-size: 3rem;
+      text-align: center;
+    }
   }
 }
 
-@media (width <= $breakpoints-sm) {
+@media (width < $breakpoints-sm) {
 
   .#{$component-name} {
 
@@ -182,7 +187,7 @@ $component-name: header;
   }
 }
 
-@media (width <= $breakpoints-xs) {
+@media (width < $breakpoints-xs) {
 
   .#{$component-name} {
     .infos__item {

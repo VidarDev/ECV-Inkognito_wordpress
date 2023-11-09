@@ -51,10 +51,11 @@
                 <h3 class="contact__adresse-title">
                     <?php if (get_field('footer__address-name', 'option')): echo get_field('footer__address-name', 'option'); endif; ?>
                 </h3>
-                <div class="contact__adresse">
+                <a href="<?php if (get_field('footer__address-url', 'option')): echo get_field('footer__address-url', 'option'); endif; ?>"
+                   target="_blank" class="contact__adresse">
                     <i class="iconoir-position"></i>
                     <p><?php if (get_field('footer__address', 'option')): echo get_field('footer__address', 'option'); endif; ?></p>
-                </div>
+                </a>
                 <?php $contact_geoloc = get_field('footer__address-map', 'option'); ?>
                 <?php if ($contact_geoloc && !empty($contact_geoloc)): ?>
                     <figure class="contact__adresse-geolocation">

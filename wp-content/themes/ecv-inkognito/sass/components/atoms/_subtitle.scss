@@ -11,7 +11,7 @@ $component-name: subtitle;
   text-transform: uppercase;
 }
 
-@media (width <= $breakpoints-sm) {
+@media (width < $breakpoints-sm) {
 
   .#{$component-name} {
     font-size: 1rem;

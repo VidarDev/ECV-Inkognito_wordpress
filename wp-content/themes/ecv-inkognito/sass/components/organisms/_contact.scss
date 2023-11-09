@@ -132,7 +132,7 @@ $component-name: contact;
   }
 }
 
-@media (width <= $breakpoints-md) {
+@media (width < $breakpoints-md) {
 
   .#{$component-name} {
 
@@ -156,7 +156,7 @@ $component-name: contact;
   }
 }
 
-@media (width <= $breakpoints-sm) {
+@media (width < $breakpoints-sm) {
 
   .#{$component-name} {
     &__adresse-title {

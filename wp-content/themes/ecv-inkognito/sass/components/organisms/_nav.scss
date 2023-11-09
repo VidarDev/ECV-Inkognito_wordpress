@@ -100,7 +100,7 @@ $component-name: nav;
     }
   }
 
-  @media (width <= $breakpoints-lg) {
+  @media (width < $breakpoints-lg) {
     .nav-modal {
       &__content {
         display: none;

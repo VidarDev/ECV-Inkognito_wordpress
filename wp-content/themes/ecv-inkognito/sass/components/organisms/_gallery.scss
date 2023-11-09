@@ -70,7 +70,7 @@ $component-name: gallery;
   }
 }
 
-@media (width <= $breakpoints-md) {
+@media (width < $breakpoints-md) {
 
   .#{$component-name} {
 
@@ -80,7 +80,7 @@ $component-name: gallery;
   }
 }
 
-@media (width <= $breakpoints-xs) {
+@media (width < $breakpoints-xs) {
 
   .#{$component-name} {
 

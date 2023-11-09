@@ -82,7 +82,7 @@ $gap-grid: 1rem;
   }
 }
 
-@media (width <= $breakpoints-md) {
+@media (width < $breakpoints-md) {
 
   .#{$component-name} {
 
@@ -92,7 +92,7 @@ $gap-grid: 1rem;
   }
 }
 
-@media (width <= $breakpoints-xs) {
+@media (width < $breakpoints-xs) {
 
   .#{$component-name} {
 

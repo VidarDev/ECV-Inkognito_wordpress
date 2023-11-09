@@ -97,7 +97,7 @@ $component-name: about;
   }
 }
 
-@media (width <= $breakpoints-2xl) {
+@media (width < $breakpoints-2xl) {
 
   .#{$component-name} {
 
@@ -116,7 +116,7 @@ $component-name: about;
   }
 }
 
-@media (width <= $breakpoints-md) {
+@media (width < $breakpoints-md) {
 
   .#{$component-name} {
     flex-direction: column;
@@ -151,7 +151,7 @@ $component-name: about;
 
     &__content {
       flex: 1 1 100%;
-      padding: 2rem 2rem 0 2rem;
+      padding: 2rem 1rem 0 1rem;
     }
 
     &__title {
@@ -164,7 +164,7 @@ $component-name: about;
   }
 }
 
-@media (width <= $breakpoints-sm) {
+@media (width < $breakpoints-sm) {
 
   .#{$component-name} {
     &__title {
@@ -177,7 +177,7 @@ $component-name: about;
   }
 }
 
-@media (width <= $breakpoints-xs) {
+@media (width < $breakpoints-xs) {
 
   .#{$component-name} {
     &__content {

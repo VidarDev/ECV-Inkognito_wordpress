@@ -106,7 +106,7 @@ $component-name: contact-form;
   }
 }
 
-@media (width <= $breakpoints-md) {
+@media (width < $breakpoints-md) {
 
   .#{$component-name} {
 
